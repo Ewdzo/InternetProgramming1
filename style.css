@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(-45deg, #247caf, #102C4B, #247caf);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    
+    color: #DEDEDE;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1em;
+    gap: 2em;
+
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    min-width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: radial-gradient(#F5F5F5, #F1F1F1);
+
+    font-family: "Montserrat", sans-serif;
+}
+
+header > img, footer > a > img { height: 2em; }
+
+header > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+
+    padding: 1em;
+}
+
+header h1 {
+    font-family: "Anta", sans-serif;
+    font-size: x-large;
+}
+
+header h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: small;
+}
+
+#ufu-logo { filter: saturate(0) invert(1); }
+
+img { max-width: 80vw; }
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 0.2em;
+    text-align: center;
+
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+nav > div > a {
+    text-decoration: none;
+    color: #BEBEBE;
+    font-size: xx-small;
+}
+
+#current-nav {
+    color: #35AAEEBB;
+}
+
+nav > div > a ~ .nav_underline {
+    height: 1px;
+    max-width: 0px;
+    transition: all 2s ease-in;
+
+
+    background-color: #35AAEE;
+}
+
+nav > div > a:hover {
+    color: #35AAEE;
+    transform: scale(2);
+    transition: all 0.5s ease-in;
+}
+
+nav > div > a:hover ~ .nav_underline {
+    max-width: 1000px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.5em;
+    
+    color: #DEDEDE;
+    font-size: xx-small;
+
+    background: linear-gradient(-45deg, #247caf, #102C4B, #247caf);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+footer > a {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    min-width: fit-content;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    text-align: center;
+    gap: 2em;
+
+    padding: 2em;
+}
+
+section > article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 2em;
+}
+
+section > article > a {
+    text-decoration: none;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight-section {
+    background: #000000DD;
+    box-shadow: 0 4px 30px #00000080;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #000000DD;
+    
+    color: #DEDEDE;
+    flex-wrap: wrap;
+}
+
+.highlight-section a {
+    color: #DEDEDE;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.highlight-section a:hover {
+    transition: all 1s;
+    transform: scale(1.1);
+
+}
+
+.highlight-section > article {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar-icon {
+    filter: invert(1);
+}
+
+#founders-section > article {
+    display: flex;
+    flex-direction: row;
+}
+
+#founders-section > article > a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    gap: 1em;
+
+    color: #252525;
+    transition: all 1s;
+}
+
+#founders-section > article > a:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+
+#founders-section img {
+    align-self: center;
+}
+
+#activities-section {
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+@media only screen and (min-width: 600px) {
+    nav { flex-direction: row; gap: 1em; }
+    nav > div > a { font-size: medium; }
+    header > div { flex-direction: row; }
+    header > div > h1 { font-size: xx-large; }
+    header > div > h2 { font-size: medium; }
+    body { text-align: start;}
+    footer { font-size: small; }
+    #activities-section { gap: 1em; justify-content: space-between; }
+}
+
+@media only screen and (min-width: 1025px) {
+    header { justify-content: space-between;}
+}
+
+table {
+    margin: 0 auto;
+    width: 80%;
+
+    font-size: small;
+}
+
+th, td {
+    padding: 0.5em;
+    width: 20%;
+
+    vertical-align: top;
+    border: solid 1px black;
+    background-color: #F5F5F5;
+    transition: all 0.5s;
+}
+
+td:hover {
+    transform: scale(1.1) rotate3d(1, 0, 0, 360deg);
+
+    transition: all 1s;
+}
+
+#photos-container {
+    gap: 4em;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    text-align: start;
+}
+
+form input {
+    text-align: center;
+}
+
+input[name="name"], input[name="email"] {
+    width: 20em;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

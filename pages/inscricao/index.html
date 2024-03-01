@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../assets/techweek.png" type="image/x-icon">
+    <title>UFU - TechWeek</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../../assets/techweek.png" alt="Logo da TechWeek">
+            <div>
+                <h1>TechWeek</h1>
+                <h2>Universidade Federal de Uberlândia</h2>
+            </div>
+        </div>
+        <nav>
+            <div>
+                <a href="../../index.html">Principal</a>
+                <div class="nav_underline"></div>
+            </div>
+            <div>
+                <a href="../../pages/programacao/index.html">Programação</a>
+                <div class="nav_underline"></div>
+            </div>
+            <div>
+                <a href="../../pages/inscricao/index.html">Inscrição</a>
+                <div class="nav_underline"></div>
+            </div>
+            <div>
+                <a href="../../pages/local/index.html" id="current-nav">Local de Realização</a>
+                <div class="nav_underline"></div>
+            </div>
+            <div>
+                <a href="../../pages/comissao/index.html">Comissão Organizadora</a>
+                <div class="nav_underline"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>FACOM TechWeek</h1>
+            <article>
+                <p>
+                    A TechWeek é uma semana acadêmica da Faculdade de Computação da UFU, realizada anualmente e que busca promover a integração das comunidades acadêmica e profissional que atuam na área de Tecnologia da Informação, principalmente em Uberlândia e região, por meio de diferentes atividades acadêmicas, científicas e culturais, tais como: palestras, mostra de trabalhos científicos, minicursos, mesas redondas, competições técnicas, entre outros.
+                </p>
+                <p>
+                    O evento é aberto para a comunidade externa à Universidade, atraindo profissionais, empresas, estudantes de outras universidades e entusiastas de tecnologia em geral.
+                </p>
+                <p>
+                    Entre os eventos que são ofertados pela FACOM TechWeek temos a Workshop de Teses e Dissertações (WTDCC), Workshop de Empreendedorismo e Criação de Startups, Mostra de Software, Meninas na Computação, TechnoMonte
+                </p>
+            </article>
+        </section>
+        <section class="highlight-section" id="activities-section">
+            <article>
+                <a href="../../pages/programacao/index.html">
+                    <img src="../../assets/videos.svg" alt="Ícone de Vídeo" height="75">
+                    <h1>Minicursos</h1>
+                </a>
+            </article>
+            <article>
+                <a href="../../pages/programacao/index.html">
+                    <img src="../../assets/code.svg" alt="Ícone de Programação" height="75">
+                    <h1>WDTCC e Mostra de Software</h1>
+                </a>
+            </article>
+            <article>
+                <a href="../../pages/programacao/index.html">
+                    <img src="../../assets/palestra.svg" alt="Ícone de Palestra" height="75">
+                    <h1>Palestras</h1>
+                </a>
+            </article>
+        </section>
+        <section>
+            <h1>Inscrição</h1>
+            <article>
+                <p>
+                    A TechWeek disponibiliza o seguinte formulário de cadastro para os interresados em participar às diversas atividades ofertadas durante a semana.
+                </p>
+                <div class="center-container">
+                    <form action="../../index.html">
+                        <div>
+                            <label for="name-input"><h4>Nome Completo:</h4></label>
+                            <input type="text" id="name-input" name="name">
+                        </div>
+                        <div>
+                            <label for="email-input"><h4>Email:</h4></label>
+                            <input type="text" id="email-input" name="email">
+                        </div>
+                        <div>
+                            <label for="phone-input"><h4>Telefone:</h4></label>
+                            <input type="number" id="phone-input" name="phone">
+                        </div>
+                        <div>
+                            <label for="type-input"><h4>Discente da UFU:</h4></label>
+                            <div>       
+                                <input type="radio" name="type" id="yes-type-input">
+                                <label for="yes-type-input">Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="type" id="no-type-input">
+                                <label for="no-type-input">Não</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="contact-input"><h4>Forma de Contato Preferida:</h4></label>
+                            <select name="contact-type" id="contact-input">
+                                <option value="telefone">Telefone</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="sms">SMS</option>
+                                <option value="email">E-Mail</option>
+                            </select>
+                        </div>
+                        <fieldset>
+                            <label for="activities-input"><h4>Atividades de Interesse:</h4></label>
+                            <div>
+                                <input type="checkbox" name="Workshop de Empreendedorismo e Criação de Startups" id="w-activities-input">
+                                <label for="w-activities-input">Workshop de Empreendedorismo e Criação de Startups</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Introdução ao Management 3.0 + Moving Motivators" id="m1-activities-input">
+                                <label for="m1-activities-input">Minicurso de Introdução ao Management 3.0 + Moving Motivators</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="Minicurso: Desmistificando a agilidade e suas aplicações em um contexto empresarial" id="m2-activities-input">
+                                <label for="m2-activities-input">Minicurso: Desmistificando a agilidade e suas aplicações em um contexto empresarial</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="Minicurso: UI/UX - Carlos Pechiori (PET-SI)" id="m3-activities-input">
+                                <label for="m3-activities-input">Minicurso: UI/UX - Carlos Pechiori (PET-SI)</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="Minicurso: Statik, Tarcísio Candido (NTT Data) - online" id="m4-activities-input">
+                                <label for="m4-activities-input">Minicurso: Statik, Tarcísio Candido (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Habilidades competitivas do futuro do profissional de TI, Renato Bulgarao (NTT Data) - online" id="m5-activities-input">
+                                <label for="m5-activities-input">Minicurso: Habilidades competitivas do futuro do profissional de TI, Renato Bulgarao (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Tendências em Desenvolvimento Mobile & Aplicativos Cross-Platform, Kawe Silva Pereira / Rafael Bezerra Araujo (NTT Data) - online" id="m6-activities-input">
+                                <label for="m6-activities-input">Minicurso: Tendências em Desenvolvimento Mobile & Aplicativos Cross-Platform, Kawe Silva Pereira / Rafael Bezerra Araujo (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Hands-On AWS usando Free Tier para criar ambiente de escalabilidade, Amanda Bouzan (NTT Data) - online" id="m8-activities-input">
+                                <label for="m7-activities-input">Minicurso: Hands-On AWS usando Free Tier para criar ambiente de escalabilidade, Amanda Bouzan (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Segurança de Sistemas - Mateus R. V. Pereira e Dathan V. S. Nóbrega (PET-SI)" id="m8-activities-input">
+                                <label for="m8-activities-input">Minicurso: Segurança de Sistemas - Mateus R. V. Pereira e Dathan V. S. Nóbrega (PET-SI)</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Habilidades competitivas do futuro do profissional de TI, Renato Bulgarao (NTT Data) - online" id="m9-activities-input">
+                                <label for="m9-activities-input">Minicurso: Habilidades competitivas do futuro do profissional de TI, Renato Bulgarao (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Trilhando o Caminho AWS: Rank Iniciante até o Rank AWS Black Belt, Marcelo Adriano (NTT Data) - online" id="m10-activities-input">
+                                <label for="m10-activities-input">Minicurso: Trilhando o Caminho AWS: Rank Iniciante até o Rank AWS Black Belt, Marcelo Adriano (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Técnicas para identificação e resolução de problemas, Ana Queiroz (NTT Data) - online" id="m11-activities-input">
+                                <label for="m11-activities-input">Minicurso: Técnicas para identificação e resolução de problemas, Ana Queiroz (NTT Data) - online</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="Minicurso: Profissional de qualidade no mercado de TI, Carlos Juncker (NTT Data) - online" id="m12-activities-input">
+                                <label for="m12-activities-input">Minicurso: Profissional de qualidade no mercado de TI, Carlos Juncker (NTT Data) - online</label>
+                            </div>
+                        </fieldset>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <a href="https://ufu.br/"><img src="../../assets/ufu.png" alt="Logo da Universidade Federal de Uberlândia" id="ufu-logo"></a>
+        <p>Enzo Weder & Hanny Emilly @ 2024</p>
+        <a href="https://facom.ufu.br/"><img src="../../assets/facom.png" id="facom-logo" alt="Logo da Faculdade de Computação da Universidade Federal de Uberlândia"></a>
+    </footer>
+</body>
+</html>
